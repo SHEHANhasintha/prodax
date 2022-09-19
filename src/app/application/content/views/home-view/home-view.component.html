@@ -1,0 +1,163 @@
+<div class="sa-layout__content d-flex">
+  <div class="card flex-grow-1 mx-sm-0 mx-n4" style="margin-top: 20px;">
+    <div class="sa-divider"></div>
+    <div class="p-md-5 p-4">
+      <div class="">
+        <div class="fs-6 fw-medium mb-3">Folders</div>
+        <div class="sa-grid">
+          <div class="sa-grid__body">
+            <div class="sa-grid__item">
+              <a href="#" class="sa-folder">
+                <div class="sa-folder__image">
+                  <svg width="1em" height="1em">
+                    <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#folder-fill"></use>
+                  </svg>
+                </div>
+                <div class="sa-folder__info">
+                  <div class="sa-folder__name">Pictures</div>
+                  <div class="sa-folder__meta">275 files</div>
+                </div>
+              </a>
+            </div>
+            <div class="sa-grid__item">
+              <a href="#" class="sa-folder">
+                <div class="sa-folder__image">
+                  <svg width="1em" height="1em">
+                    <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#folder-fill"></use>
+                  </svg>
+                </div>
+                <div class="sa-folder__info">
+                  <div class="sa-folder__name">Documents</div>
+                  <div class="sa-folder__meta">12 files</div>
+                </div>
+              </a>
+            </div>
+            <div class="sa-grid__item">
+              <a href="#" class="sa-folder">
+                <div class="sa-folder__image">
+                  <svg width="1em" height="1em">
+                    <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#folder-fill"></use>
+                  </svg>
+                </div>
+                <div class="sa-folder__info">
+                  <div class="sa-folder__name">Programs</div>
+                  <div class="sa-folder__meta">3 files</div>
+                </div>
+              </a>
+            </div>
+            <div class="sa-grid__item">
+              <a href="#" class="sa-folder">
+                <div class="sa-folder__image">
+                  <svg width="1em" height="1em">
+                    <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#folder-fill"></use>
+                  </svg>
+                </div>
+                <div class="sa-folder__info">
+                  <div class="sa-folder__name">Videos</div>
+                  <div class="sa-folder__meta">48 files</div>
+                </div>
+              </a>
+            </div>
+            <div class="sa-grid__item">
+              <a href="#" class="sa-folder">
+                <div class="sa-folder__image">
+                  <svg width="1em" height="1em">
+                    <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#folder-fill"></use>
+                  </svg>
+                </div>
+                <div class="sa-folder__info">
+                  <div class="sa-folder__name">Downloads</div>
+                  <div class="sa-folder__meta">7 files</div>
+                </div>
+              </a>
+            </div>
+            <div class="sa-grid__item">
+              <a href="#" class="sa-folder">
+                <div class="sa-folder__image">
+                  <svg width="1em" height="1em">
+                    <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#folder-fill"></use>
+                  </svg>
+                </div>
+                <div class="sa-folder__info">
+                  <div class="sa-folder__name">Music</div>
+                  <div class="sa-folder__meta">378 files</div>
+                </div>
+              </a>
+            </div>
+            <div class="sa-grid__item">
+              <a href="#" class="sa-folder">
+                <div class="sa-folder__image">
+                  <svg width="1em" height="1em">
+                    <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#folder-fill"></use>
+                  </svg>
+                </div>
+                <div class="sa-folder__info">
+                  <div class="sa-folder__name">Favorites</div>
+                  <div class="sa-folder__meta">51 files</div>
+                </div>
+              </a>
+            </div>
+            <div class="sa-grid__item">
+              <a href="#" class="sa-folder">
+                <div class="sa-folder__image">
+                  <svg width="1em" height="1em">
+                    <use xlink:href="vendor/bootstrap-icons/bootstrap-icons.svg#folder-fill"></use>
+                  </svg>
+                </div>
+                <div class="sa-folder__info">
+                  <div class="sa-folder__name">Contacts</div>
+                  <div class="sa-folder__meta">192 files</div>
+                </div>
+              </a>
+            </div>
+            <div class="sa-grid__filler" role="presentation"></div>
+            <div class="sa-grid__filler" role="presentation"></div>
+            <div class="sa-grid__filler" role="presentation"></div>
+            <div class="sa-grid__filler" role="presentation"></div>
+            <div class="sa-grid__filler" role="presentation"></div>
+            <div class="sa-grid__filler" role="presentation"></div>
+            <div class="sa-grid__filler" role="presentation"></div>
+            <div class="sa-grid__filler" role="presentation"></div>
+            <div class="sa-grid__filler" role="presentation"></div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5">
+        <div class="fs-6 fw-medium mb-3">Files</div>
+        <div class="sa-grid">
+          <div class="sa-grid__body">
+            <div *ngFor="let item of thumbnails" class="sa-grid__item">
+              <a class="sa-file sa-file--type--jpg" data-bs-toggle="offcanvas" href="application/videos/{{item._id}}" role="button"
+                aria-controls="fileManagerDetails">
+                <div class="sa-file__thumbnail sa-box">
+                  <div class="sa-box__body">
+                    <div class="sa-box__container sa-file__image">
+                      <img src="{{item.cdnUrlThumbnail}}" alt="" width="320" height="180">
+                    </div>
+                  </div>
+                  <div class="sa-file__badge badge badge-sa-dark text-uppercase">mp4</div>
+                </div>
+                <div class="sa-file__info">
+                  <div class="sa-file__name">{{item.videoTitle}}</div>
+                  <div class="sa-file__meta">578.07 KB</div>
+                </div>
+              </a>
+            </div>
+
+
+
+            <!-- <div class="sa-grid__filler" role="presentation"></div>
+            <div class="sa-grid__filler" role="presentation"></div>
+            <div class="sa-grid__filler" role="presentation"></div>
+            <div class="sa-grid__filler" role="presentation"></div>
+            <div class="sa-grid__filler" role="presentation"></div>
+            <div class="sa-grid__filler" role="presentation"></div>
+            <div class="sa-grid__filler" role="presentation"></div>
+            <div class="sa-grid__filler" role="presentation"></div>
+            <div class="sa-grid__filler" role="presentation"></div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

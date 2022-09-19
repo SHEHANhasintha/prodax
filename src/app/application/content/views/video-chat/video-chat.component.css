@@ -1,0 +1,16 @@
+.chat-room{
+  display: flex;
+  flex-direction: row;
+}
+
+.sa-chat__messages{
+  /* max-height: 500px; */
+  height: 100vh;
+  width: 400px;
+  overflow-y: scroll;
+  display: block;
+}
+
+.video-player{
+  width: 200px;
+}

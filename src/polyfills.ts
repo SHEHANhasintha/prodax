@@ -45,8 +45,29 @@
 /***************************************************************************************************
  * Zone JS is required by default for Angular itself.
  */
-import 'zone.js';  // Included with Angular CLI.
+import 'zone.js'; // Included with Angular CLI.
 
+// import "./vendor/jquery/jquery.min.js"
+// import "./vendor/feather-icons/feather.min.js"
+// import "./vendor/simplebar/simplebar.min.js"
+// import "./vendor/bootstrap/js/bootstrap.bundle.min.js"
+// import "./vendor/highlight.js/highlight.pack.js"
+// import "./vendor/quill/quill.min.js"
+// import "./vendor/air-datepicker/js/datepicker.min.js"
+// import "./vendor/air-datepicker/js/i18n/datepicker.en.js"
+// // import "./vendor/select2/js/select2.min.js"
+// import "./vendor/fontawesome/js/all.min.js"
+// import "./vendor/chart.js/chart.min.js"
+// // import "./vendor/datatables/js/jquery.dataTables.min.js"
+// // import "./vendor/datatables/js/dataTables.bootstrap5.min.js"
+// import "./vendor/nouislider/nouislider.min.js"
+// import "./vendor/fullcalendar/main.min.js"
+
+// // import './js/calendar.js';
+// // import './js/custom.js';
+// import './js/demo-chart-js.js'
+// // import './js/stroyka.js'
+// // import './js/demo.js'
 
 /***************************************************************************************************
  * APPLICATION IMPORTS

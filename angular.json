@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "prodaxFE": {
+    "prodax-tube": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/prodax-fe",
+            "outputPath": "dist/prodax-tube",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,9 +23,23 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles/styles.css",
+              "src/vendor/bootstrap/css/bootstrap.ltr.css",
+              "src/vendor/highlight.js/styles/github.css",
+              "src/vendor/simplebar/simplebar.min.css",
+              "src/vendor/quill/quill.snow.css",
+              "src/vendor/air-datepicker/css/datepicker.min.css",
+              "src/vendor/select2/css/select2.min.css",
+              "src/vendor/datatables/css/dataTables.bootstrap5.min.css",
+              "src/vendor/nouislider/nouislider.min.css",
+              "src/vendor/fullcalendar/main.min.css",
+              "src/css/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/socket/socket.io.js",
+              "src/assets/js/socket/socket.io.min.js"
+              // "src/assets/js/socket/socket.io.js.map"
+            ]
           },
           "configurations": {
             "production": {
@@ -64,10 +78,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "prodaxFE:build:production"
+              "browserTarget": "prodax-tube:build:production"
             },
             "development": {
-              "browserTarget": "prodaxFE:build:development"
+              "browserTarget": "prodax-tube:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +89,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "prodaxFE:build"
+            "browserTarget": "prodax-tube:build"
           }
         },
         "test": {
@@ -90,12 +104,61 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles/styles.css",
+              "src/vendor/bootstrap/css/bootstrap.ltr.css",
+              "src/vendor/highlight.js/styles/github.css",
+              "src/vendor/simplebar/simplebar.min.css",
+              "src/vendor/quill/quill.snow.css",
+              "src/vendor/air-datepicker/css/datepicker.min.css",
+              "src/vendor/select2/css/select2.min.css",
+              "src/vendor/datatables/css/dataTables.bootstrap5.min.css",
+              "src/vendor/nouislider/nouislider.min.css",
+              "src/vendor/fullcalendar/main.min.css",
+              "src/css/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/vendor/jquery/jquery.min.js",
+              "src/vendor/feather-icons/feather.min.js",
+              "src/vendor/simplebar/simplebar.min.js",
+              "src/vendor/bootstrap/js/bootstrap.bundle.min.js",
+              "src/vendor/highlight.js/highlight.pack.js",
+              "src/vendor/quill/quill.min.js",
+              "src/vendor/air-datepicker/js/datepicker.min.js",
+              "src/vendor/air-datepicker/js/i18n/datepicker.en.js",
+              "src/vendor/select2/js/select2.min.js",
+              "src/vendor/fontawesome/js/all.min.js",
+              "src/vendor/chart.js/chart.min.js",
+              "src/vendor/datatables/js/jquery.dataTables.min.js",
+              "src/vendor/datatables/js/dataTables.bootstrap5.min.js",
+              "src/vendor/nouislider/nouislider.min.js",
+              "src/vendor/fullcalendar/main.min.js",
+              "src/js/stroyka.js",
+              "src/js/custom.js",
+              "src/js/calendar.js",
+              "src/js/demo.js",
+              "src/js/demo-chart-js.js",
+              "src/assets/js/socket/socket.io.js",
+              "src/assets/js/socket/socket.io.min.js",
+              "src/assets/js/socket/socket.io.js.map"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "5bdaa4d4-e540-4949-87ac-088a4c35a546",
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }

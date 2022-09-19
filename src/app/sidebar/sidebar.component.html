@@ -1,0 +1,58 @@
+<div class="sa-app__sidebar" id="sa-app--desktop-sidebar">
+  <div class="sa-sidebar">
+    <div class="sa-sidebar__header">
+      <a class="sa-sidebar__logo" routerLink="home" routerLinkActive="active" ariaCurrentWhenActive="page">
+        <div class="sa-sidebar-logo" style="margin: 0px;left: 50px; padding:0px;">
+          <img src="assets/images/logo.png" style="width:170px;  margin-left:10px; padding: 0px;">
+        </div>
+      </a>
+    </div>
+    <div class="sa-sidebar__body" data-simplebar="init">
+      <div class="simplebar-wrapper" style="margin: 0px">
+        <div class="simplebar-height-auto-observer-wrapper">
+          <div class="simplebar-height-auto-observer"></div>
+        </div>
+        <div class="simplebar-mask">
+          <div class="simplebar-offset" style="right: 0px; bottom: 0px">
+            <div
+              class="simplebar-content-wrapper"
+              style="height: 100%; overflow: hidden scroll"
+            >
+              <div class="simplebar-content" style="padding: 0px">
+                <app-items></app-items>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="simplebar-placeholder"
+          style="width: auto; height: 1291px"
+        ></div>
+      </div>
+      <div
+        class="simplebar-track simplebar-horizontal"
+        style="visibility: hidden"
+      >
+        <div
+          class="simplebar-scrollbar"
+          style="width: 0px; display: none"
+        ></div>
+      </div>
+      <div
+        class="simplebar-track simplebar-vertical"
+        style="visibility: visible"
+      >
+        <div
+          class="simplebar-scrollbar"
+          style="
+            height: 614px;
+            transform: translate3d(0px, 0px, 0px);
+            display: block;
+          "
+        ></div>
+      </div>
+    </div>
+  </div>
+  <div class="sa-app__sidebar-shadow"></div>
+  <div class="sa-app__sidebar-backdrop" data-sa-close-sidebar=""></div>
+</div>
